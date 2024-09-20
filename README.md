@@ -1,5 +1,5 @@
 # Gerar um arquivo README.md com o conteúdo fornecido em Markdown
-content = """
+
 # **Site de Gestão de Finanças Pessoais**
 
 ## **Visão Geral**
