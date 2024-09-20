@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Finances</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Controle de finanças</div>
+        <nav>
+            <ul>
+                <li><a href="#overview">Visão Geral</a></li>
+                <li><a href="#transactions">Transações</a></li>
+                <li><a href="#control">Controle Financeiro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>Visão Geral</h2>
+        <div class="summary">
+            <div class="card">Entradas: $<span id="total-income">0</span></div>
+            <div class="card">Saidas: $<span id="total-expenses">0</span></div>
+            <div class="card">Balanço: $<span id="total-balance">0</span></div>
+        </div>
+        <canvas id="chart"></canvas>
+    </section>
+
+    <section id="control">
+        <h2>Adicionar transação</h2>
+        <form id="transaction-form">
+            <input type="date" name="date" id="date" placeholder="Data transação">
+            <input type="text" id="description" placeholder="Descrição" required>
+            <input type="number" id="amount" placeholder="R$" required>
+            <select id="type">
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <section id="transactions">
+        <h2>Controle Financeiro</h2>
+        <ul id="transaction-list">
+            <!-- Transactions will appear here -->
+        </ul>
+
+    <footer>
+        <p>Developed by 2024</p>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
